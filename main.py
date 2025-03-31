@@ -149,12 +149,11 @@ def plot_band_evolution(concen_list, L_a, L_s, T_band):
     plt.savefig("line.png", transparent=False, dpi=300)
     plt.show()
 
-def calculate_band_structure():
+def calculate_band_structure(Sb_concent):
     """
     Calculate and plot the band structure for Bi (Sb concentration = 0).
     Reads the Bi.cif file and computes eigenvalues along a high-symmetry k-path.
     """
-    Sb_concent = 0.0
     atoms = ase.io.read('Bi.cif', format='cif')
     lat = atoms.cell.get_bravais_lattice()
     
@@ -191,7 +190,7 @@ def calculate_band_structure():
     plt.grid(True)
     plt.tight_layout()
     plt.title('Band structure of Bi (x = 0)')
-    plt.savefig("band_structure_all.png", transparent=False, dpi=300)
+    plt.savefig("band_structure.png", transparent=False, dpi=300)
     plt.show()
 
 ######## MAIN ##########
@@ -204,4 +203,4 @@ concen_list, L_a_plot, L_s_plot, T_band = compute_band_evolution()
 plot_band_evolution(concen_list, L_a_plot, L_s_plot, T_band)
 
 # 3. Band structure calculation for Bi
-calculate_band_structure()
+calculate_band_structure(Sb_concent=0.11)
