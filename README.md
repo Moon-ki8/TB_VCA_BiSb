@@ -8,7 +8,6 @@ The main objectives of this code are to:
 - Calculate the TB model parameters for Bi and Sb based on a reference (Electronic structure of the semimetals Bi and Sb, *Physical Review B* 1995).
 - Perform a single calculation of the TB model for given parameters.
 - Compute and plot the evolution of the energy bands over a range of Sb concentrations.
-- Generate the band structure of Bi using crystallographic information from a CIF file.
 
 ## Files in the Repository
 
@@ -34,9 +33,4 @@ The code requires the following Python packages:
 - [NumPy](https://numpy.org/)
 - [Matplotlib](https://matplotlib.org/)
 - [ASE (Atomic Simulation Environment)](https://wiki.fysik.dtu.dk/ase/)
-- Any additional custom modules (such as `utils.py`) should be present in the repository.
 
-You can install the required packages using pip:
-
-```bash
-pip install numpy matplotlib ase
