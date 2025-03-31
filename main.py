@@ -203,4 +203,4 @@ concen_list, L_a_plot, L_s_plot, T_band = compute_band_evolution()
 plot_band_evolution(concen_list, L_a_plot, L_s_plot, T_band)
 
 # 3. Band structure calculation for Bi
-calculate_band_structure(Sb_concent=0.11)
+calculate_band_structure(Sb_concent)

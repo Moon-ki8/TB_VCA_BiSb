@@ -26,7 +26,7 @@ The main objectives of this code are to:
   - `line.pdf`: Plot of the band evolution with Sb concentration.
   ![line](line.png)
   - `band_structure_all.png`: Band structure plot for x=0.11.
-  ![Bi](band_structre.png)
+  ![Bi](band_structure.png)
 
 ## Requirements
 
