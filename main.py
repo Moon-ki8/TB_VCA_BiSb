@@ -146,7 +146,7 @@ def plot_band_evolution(concen_list, L_a, L_s, T_band):
     plt.xticks(fontsize=15)
     plt.yticks(fontsize=15)
     plt.tight_layout()
-    plt.savefig("line.png", transparent=True, dpi=300)
+    plt.savefig("line.png", transparent=False, dpi=300)
     plt.show()
 
 def calculate_band_structure():
@@ -190,7 +190,8 @@ def calculate_band_structure():
     plt.ylabel(r"$E$ (eV)", fontsize=15)
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig("band_structure_all.png", transparent=True, dpi=300)
+    plt.title('Band structure of Bi (x = 0)')
+    plt.savefig("band_structure_all.png", transparent=False, dpi=300)
     plt.show()
 
 ######## MAIN ##########
