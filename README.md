@@ -24,6 +24,7 @@ The main objectives of this code are to:
   A CIF file containing crystallographic data for bismuth, used for the band structure calculation.
 - **Output Files**  
   - `line.pdf`: Plot of the band evolution with Sb concentration.
+  ![line](line.png)
   - `band_structure_all.png`: Band structure plot for Bi.
 
 ## Requirements
